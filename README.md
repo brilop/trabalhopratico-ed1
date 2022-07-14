@@ -1,1 +1,0 @@
-# trabalhopratico-ed1
