@@ -13,3 +13,14 @@ Livro *cria(int isbn, char *titulo, char *autor, int estoque){
 
     return novo;
 } 
+
+void insere(Livro **L, int isbn, char *titulo, char *autor, int estoque){
+    Livro *novo = cria(isbn, titulo, autor, estoque);
+    if((*L) == NULL){
+        (*L) = novo;
+    } else{
+        novo->prox = (*L);
+        (*L)->ant = novo;
+        (*L) = novo;
+    }
+}

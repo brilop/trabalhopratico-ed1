@@ -15,5 +15,6 @@ typedef struct livro{
 } Livro;
 
 Livro *cria(int isbn, char *titulo, char *autor, int estoque);
+void insere(Livro **L, int isbn, char *titulo, char *autor, int estoque);
 
 #endif 
